@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/6a1bf1cc12.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body class="bg">
+    <div class="container text-center fw-bold mb-4 mt-4 " >
+        <h1><a class="a" href="browser.html">Гостиница</a></h1>
+    </div>
+
+    
+
+    <div class="container">
+      <div><button type="button" class="btn btn-outline-secondary container text-center" ><a class="a" href="support.html">Поддержка</a></button></div>
+        <div class="row">
+          <div class="col">
+            <div class="text-center fw-bold mb-2 mt-2 texty2_0"> Люкс для милой пары </div>
+            <div><img src="foto/lux_for_couple.webp" onclick="enlargeImg(1)" id="img1" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded overlay "> <br />
+              <!-- Button to reset the Image size -->
+              <button  type="button" class=" btn btn-outline-secondary d-grid gap-2 col-6 mx-auto"onclick="resetImg(1)">Назад</button> </div>
+          </div>
+          <div class="col">
+            <div class="text-center fw-bold mb-2 mt-2 texty2_0"> Строгий стандарт </div>
+            <div><img src="foto/standar_plus.webp" onclick="enlargeImg(2)" id="img2"  class="w-100 mb-2 mb-md-4 shadow-1-strong rounded overlay"> <br />
+              <!-- Button to reset the Image size -->
+              <button type="button" class=" btn btn-outline-secondary d-grid gap-2 col-6 mx-auto" onclick="resetImg(2)">Назад</button> </div>
+          </div>
+          <div class="col" >
+            <div class="text-center fw-bold mb-2 mt-2 texty2_0"> Эконом для инвалидов </div>
+            <div><img src="foto/eco.jpg" onclick="enlargeImg(3)" id="img3" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded overlay"> <br />
+              <!-- Button to reset the Image size -->
+              <button type="button" class="btn btn-outline-secondary d-grid gap-2 col-6 mx-auto" onclick="resetImg(3)">Назад</button> </div>
+          </div>
+        </div>
+
+        <div class="slideshow-container mb-4 mt-4">
+
+          <div class="mySlides photo">
+            <div class="numbertext">1 / 2<div><i class="fa-solid fa-circle-info " title='Скидка 15% на номер "Люкс для милой пары" при бронирование за месяц без отмены бронирования'></i>
+          <!--  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title='Скидка 15% на номер "Люкс для милой пары" при бронирование за месяц без отмены бронирования'>
+                Tooltip with HTML
+            </button>--></div>
+          </div>
+            <img  src="foto/lux.jpg" style="width:100%">
+            <!-- <div class="text">Скидка 15% на номер "Люкс для милой пары" при бронирование за месяц без отмены бронирования </div>-->
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">2 / 2<div><i class="fa-solid fa-circle-info " title='Скидка 10% на номер "Строгий стандарт" без отмены бронирования'></i>
+            <!--  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                  Tooltip with HTML
+              </button>--></div>
+            </div>
+            <img  src="foto/standar.jpg" style="width:100%">
+            <!-- <div class="text">Скидка 10% на номер "Строгий стандарт" без отмены бронирования</div>-->
+          </div>
+          
+          <div> 
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+          </div>
+    
+   
+    <script src="js.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
